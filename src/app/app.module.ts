@@ -4,15 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { BannerComponent } from './banner/banner.component';
-import { AcercaDeComponent } from './acerca-de/acerca-de.component';
-import { ExperienciaComponent } from './experiencia/experiencia.component';
-import { EducacionComponent } from './educacion/educacion.component';
-import { ExperienciaIndividualComponent } from './experiencia-individual/experiencia-individual.component';
-import { EducacionIndividualComponent } from './educacion-individual/educacion-individual.component';
-import { SkillsComponent } from './skills/skills.component';
-import { SkillIndividualComponent } from './skill-individual/skill-individual.component';
+import { HeaderComponent } from 'src/app/componentes/header/header.component';
+import { BannerComponent } from 'src/app/componentes/banner/banner.component';
+import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
+import { ExperienciaComponent } from 'src/app/componentes/experiencia/experiencia.component';
+import { EducacionComponent } from 'src/app/componentes/educacion/educacion.component';
+import { ExperienciaIndividualComponent } from 'src/app/componentes/experiencia-individual/experiencia-individual.component';
+import { EducacionIndividualComponent } from 'src/app/componentes/educacion-individual/educacion-individual.component';
+import { SkillsComponent } from './componentes/skills/skills.component';
+import { SkillIndividualComponent } from 'src/app/componentes/skill-individual/skill-individual.component';
 
 @NgModule({
   declarations: [

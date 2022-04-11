@@ -1,3 +1,4 @@
+import { EducacionService } from 'src/app/services/educacion.service';
 import { Component, OnInit } from '@angular/core';
 import { EducacionModel } from 'src/app/Models/EducacionModel';
 
@@ -10,11 +11,15 @@ export class EducacionComponent implements OnInit {
 
   educacion: EducacionModel[] = []
 
-  constructor() {}
+  constructor(private educacionService:EducacionService) { }
 
   ngOnInit(): void {
-    let educacion1 = new EducacionModel ("UNVM", "Villa Maria", new Date (2015, 0o2), new Date (2022, 0o2), "La licenciatura")
-this.educacion.push (educacion1)
+    this.getAllEducacion()
+    
+}
+
+getAllEducacion():void {
+  this.educacion = this.educacionService.getAllEducacion()
 }
 
 }
