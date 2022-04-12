@@ -7,11 +7,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from 'src/app/componentes/header/header.component';
 import { BannerComponent } from 'src/app/componentes/banner/banner.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
-import { ExperienciaComponent } from 'src/app/componentes/experiencia/experiencia.component';
+import { ExperienciaPComponent } from 'src/app/componentes/experienciaP/experienciaP.component';
 import { EducacionPComponent } from 'src/app/componentes/educacionP/educacionP.component';
-import { ExperienciaIndividualComponent } from 'src/app/componentes/experiencia-individual/experiencia-individual.component';
+import { ExperienciaHComponent } from 'src/app/componentes/experienciaH/experienciaH.component';
 import { EducacionHComponent } from 'src/app/componentes/educacionH/educacionH.component';
-import { SkillsComponent } from './componentes/skills/skills.component';
+import { SkillsPComponent } from './componentes/skillsP/skillsP.component';
 import { SkillIndividualComponent } from 'src/app/componentes/skill-individual/skill-individual.component';
 
 @NgModule({
@@ -20,11 +20,11 @@ import { SkillIndividualComponent } from 'src/app/componentes/skill-individual/s
     HeaderComponent,
     BannerComponent,
     AcercaDeComponent,
-    ExperienciaComponent,
+    ExperienciaPComponent,
     EducacionPComponent,
-    ExperienciaIndividualComponent,
+    ExperienciaHComponent,
     EducacionHComponent,
-    SkillsComponent,
+    SkillsPComponent,
     SkillIndividualComponent
   ],
   imports: [
