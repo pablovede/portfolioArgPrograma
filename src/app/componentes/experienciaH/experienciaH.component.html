@@ -1,6 +1,6 @@
-<p><ul>
-    <H5>titulo del puesto</H5>
-    <li>lugar</li>
-    <li>fecha</li>
-    <li>descripcion</li>
-</ul>
+<div class="experienciaH">
+    <h5>{{experiencia.tituloPuesto}}</h5>
+    <h6>{{experiencia.lugar}}</h6>
+    <p id="fecha">{{experiencia.fechaInicio | date:'shortDate'}} - {{experiencia.fechaFinalizacion | date:'shortDate'}}</p>
+    <p>{{experiencia.descripcion}}</p>
+    <hr>
