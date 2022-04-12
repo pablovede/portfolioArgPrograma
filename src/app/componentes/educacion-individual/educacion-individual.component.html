@@ -1,8 +1,5 @@
 <div class="educacion-individual">
-    <h6>Nueva Educacion</h6>
-    <p>{{educacionIndi.tituloEstablecimiento}}</p>
-    <p>{{educacionIndi.lugar}}</p>
-    <p>{{educacionIndi.fechaInicio}}</p>
-    <p>{{educacionIndi.fechaFinalizacion}}</p>
-    <p>{{educacionIndi.descripcion}}</p>
-</div>
+    <h5>{{educacion.tituloEstablecimiento}}</h5>
+    <h6>{{educacion.lugar}}</h6>
+    <p>{{educacion.fechaInicio | date:'shortDate'}} - {{educacion.fechaFinalizacion | date:'shortDate'}}</p>
+    <p>{{educacion.descripcion}}</p>

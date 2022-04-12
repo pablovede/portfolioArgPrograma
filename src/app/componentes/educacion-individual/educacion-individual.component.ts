@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { EducacionModel } from 'src/app/Models/EducacionModel';
+import { Educacion } from 'src/app/Models/Educacion';
 
 @Component({
   selector: 'app-educacion-individual',
@@ -8,9 +8,9 @@ import { EducacionModel } from 'src/app/Models/EducacionModel';
 })
 export class EducacionIndividualComponent implements OnInit{
  
-  // como chota hago para importar los parametros que irian despues de -new EducacionModel- directamente del servicio????
+  // como chota hago para importar los parametros que irian despues de -new EducacionModel- directamente del servicio???? con strictPropertyInitialization": false
 
-  @Input() educacion: EducacionModel = new EducacionModel ()
+  @Input() educacion:Educacion;
   
   constructor () {}
 

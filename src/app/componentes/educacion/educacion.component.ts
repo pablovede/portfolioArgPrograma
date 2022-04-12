@@ -1,6 +1,6 @@
 import { EducacionService } from 'src/app/services/educacion.service';
 import { Component, OnInit } from '@angular/core';
-import { EducacionModel } from 'src/app/Models/EducacionModel';
+import { Educacion } from 'src/app/Models/Educacion';
 
 @Component({
   selector: 'app-educacion',
@@ -9,7 +9,7 @@ import { EducacionModel } from 'src/app/Models/EducacionModel';
 })
 export class EducacionComponent implements OnInit {
 
-  educacion: EducacionModel[] = []
+  educacion: Educacion[] = []
 
   constructor(private educacionService:EducacionService) { }
 
