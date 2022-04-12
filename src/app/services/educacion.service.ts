@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Educacion } from 'src/app/Models/Educacion'
+import { EducacionModel } from 'src/app/Models/EducacionModel'
 
 @Injectable({
   providedIn: 'root'
 })
 export class EducacionService {
   
-  educacion: Educacion[] = []
+  educacion: EducacionModel[] = []
 
   constructor() { }
 
 
-getAllEducacion(): Educacion[] {
-  this.educacion.push ( new Educacion ("UNVM", "Villa Maria", new Date (2015, 0o2), new Date (2022, 0o2), "Licienciatura en Diseño y Produccion Audiovisual"))
-
+getAllEducacion(): EducacionModel[] {
+  this.educacion.push ( new EducacionModel ("Universidad Nacional de Villa Maria", "Licenciatura en Diseño y Produccion Audiovisual", new Date (2015, 0o2), new Date (2022, 0o2)))
+  this.educacion.push ( new EducacionModel ("Universidad Autonoma de Baja California", "Intercambio Estudiantil", new Date (2019, 0o2), new Date (2022, 0o0)))
 
 return this.educacion
 }

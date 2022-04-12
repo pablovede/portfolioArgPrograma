@@ -8,9 +8,9 @@ import { HeaderComponent } from 'src/app/componentes/header/header.component';
 import { BannerComponent } from 'src/app/componentes/banner/banner.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from 'src/app/componentes/experiencia/experiencia.component';
-import { EducacionComponent } from 'src/app/componentes/educacion/educacion.component';
+import { EducacionPComponent } from 'src/app/componentes/educacionP/educacionP.component';
 import { ExperienciaIndividualComponent } from 'src/app/componentes/experiencia-individual/experiencia-individual.component';
-import { EducacionIndividualComponent } from 'src/app/componentes/educacion-individual/educacion-individual.component';
+import { EducacionHComponent } from 'src/app/componentes/educacionH/educacionH.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { SkillIndividualComponent } from 'src/app/componentes/skill-individual/skill-individual.component';
 
@@ -21,9 +21,9 @@ import { SkillIndividualComponent } from 'src/app/componentes/skill-individual/s
     BannerComponent,
     AcercaDeComponent,
     ExperienciaComponent,
-    EducacionComponent,
+    EducacionPComponent,
     ExperienciaIndividualComponent,
-    EducacionIndividualComponent,
+    EducacionHComponent,
     SkillsComponent,
     SkillIndividualComponent
   ],

@@ -1,15 +1,15 @@
 import { EducacionService } from 'src/app/services/educacion.service';
 import { Component, OnInit } from '@angular/core';
-import { Educacion } from 'src/app/Models/Educacion';
+import { EducacionModel } from 'src/app/Models/EducacionModel';
 
 @Component({
   selector: 'app-educacion',
-  templateUrl: './educacion.component.html',
-  styleUrls: ['./educacion.component.css']
+  templateUrl: './educacionP.component.html',
+  styleUrls: ['./educacionP.component.css']
 })
-export class EducacionComponent implements OnInit {
+export class EducacionPComponent implements OnInit {
 
-  educacion: Educacion[] = []
+  educacion: EducacionModel[] = []
 
   constructor(private educacionService:EducacionService) { }
 
