@@ -1,7 +1,7 @@
-export  class ExperiencianModel {
+export  class ExperienciaModel {
 
     tituloPuesto: string
-    lugar: string
+    lugar: string | null
     fechaInicio: Date
     fechaFinalizacion: Date
     descripcion: string

@@ -12,7 +12,7 @@ import { EducacionPComponent } from 'src/app/componentes/educacionP/educacionP.c
 import { ExperienciaHComponent } from 'src/app/componentes/experienciaH/experienciaH.component';
 import { EducacionHComponent } from 'src/app/componentes/educacionH/educacionH.component';
 import { SkillsPComponent } from './componentes/skillsP/skillsP.component';
-import { SkillIndividualComponent } from 'src/app/componentes/skill-individual/skill-individual.component';
+import { SkillsHComponent } from 'src/app/componentes/skillsH/skillsH.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { SkillIndividualComponent } from 'src/app/componentes/skill-individual/s
     ExperienciaHComponent,
     EducacionHComponent,
     SkillsPComponent,
-    SkillIndividualComponent
+    SkillsHComponent
   ],
   imports: [
     BrowserModule,

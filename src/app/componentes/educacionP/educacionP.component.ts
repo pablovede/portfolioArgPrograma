@@ -1,9 +1,9 @@
-import { EducacionService } from 'src/app/services/educacion.service';
+import { EducacionService } from 'src/app/services/educacion/educacion.service';
 import { Component, OnInit } from '@angular/core';
 import { EducacionModel } from 'src/app/Models/EducacionModel';
 
 @Component({
-  selector: 'app-educacion',
+  selector: 'app-educacionP',
   templateUrl: './educacionP.component.html',
   styleUrls: ['./educacionP.component.css']
 })
