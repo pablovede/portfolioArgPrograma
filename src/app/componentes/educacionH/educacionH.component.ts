@@ -8,7 +8,6 @@ import { EducacionModel } from 'src/app/Models/EducacionModel';
 })
 export class EducacionHComponent implements OnInit{
  
-  // como chota hago para importar los parametros que irian despues de -new EducacionModel- directamente del servicio???? con strictPropertyInitialization": false
 
   @Input() educacion:EducacionModel;
   
