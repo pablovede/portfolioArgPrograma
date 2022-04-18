@@ -13,3 +13,8 @@
 #fecha {
     color: grey;
 }
+
+.experienciaP, .educacionH, .proyectoP, .skillsP  {
+    margin-left: 50px;
+    margin-right: 50px;
+}

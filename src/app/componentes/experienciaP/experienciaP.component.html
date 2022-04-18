@@ -1,10 +1,13 @@
 <div class="container"  >
     <div class="row" id="bordeDelimitado1">
         <H2>Experiencia</H2>
-<div class="experienciaP">
+<div class="container-fluid">
+        <div class="experienciaP">
+            <br>
     <div *ngFor="let experiencias of experiencia"> 
-        <app-experienciaH [experiencia]="experiencias"> </app-experienciaH>
+        <app-experienciaH [experiencia]= "experiencias"> </app-experienciaH>
+    </div>
+    </div>
 </div>
 </div>
     </div>
-</div>

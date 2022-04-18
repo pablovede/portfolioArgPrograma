@@ -1,5 +1,12 @@
 <div class="container"  >
-    <div class="row" id="bordeDelimitado1"><h3>Hard & Soft Skills</h3>
-        <app-skillsH></app-skillsH>
-        </div>
+    <div class="row" id="bordeDelimitado1">
+        <H2>Skills</H2>
+        <div class="container-fluid">
+<div class="skillsP">
+    <div *ngFor="let skill of skills"> 
+        <app-skillsH [skills]="skill"> </app-skillsH>
+</div>
+</div>
+    </div>
+</div>
 </div>
