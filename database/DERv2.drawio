@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-18T23:05:24.651Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="EZPUy8Ky8a3gm6UUNYbG" version="17.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-18T23:52:43.455Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="CnsvBP9Dfhle9ImGotg2" version="17.4.5" type="github">
   <diagram id="QpSm8B5l4Wpi0U74M7_F" name="DER">
-    <mxGraphModel dx="1038" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="716" dy="386" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -184,7 +184,7 @@
         <mxCell id="lIModVLrYndjuk8-XewW-5" value="Experiencia_laboral" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;swimlaneFillColor=default;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=0;glass=0;swimlaneLine=0;labelBorderColor=none;" parent="1" vertex="1">
           <mxGeometry x="1216" y="440" width="160" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="lIModVLrYndjuk8-XewW-6" value="+í ½í³Œid_Persona: int&#xa;+Establecimiento: varchar&#xa;+esTrabajoActual: boolean&#xa;+Titulo: varchar&#xa;+Fecha_inicio: date&#xa;+Fecha_fin: date&#xa;+í ½í³Œ Tipo_empleo_id: int" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="lIModVLrYndjuk8-XewW-5" vertex="1">
+        <mxCell id="lIModVLrYndjuk8-XewW-6" value="+í ½í³Œid_Persona: int&#xa;+Establecimiento: varchar&#xa;+esTrabajoActual: boolean&#xa;+Cargo: varchar&#xa;+Fecha_inicio: date&#xa;+Fecha_fin: date&#xa;+í ½í³Œ Tipo_empleo_id: int" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="lIModVLrYndjuk8-XewW-5" vertex="1">
           <mxGeometry y="30" width="160" height="140" as="geometry" />
         </mxCell>
         <mxCell id="lIModVLrYndjuk8-XewW-7" value="Educacion" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;swimlaneFillColor=default;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=0;glass=0;swimlaneLine=0;labelBorderColor=none;" parent="1" vertex="1">
