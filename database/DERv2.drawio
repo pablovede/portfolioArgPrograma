@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-23T15:46:27.251Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="-IHOAH_0RHS0oIeusZEG" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-23T16:18:00.915Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="g7hQO_f1lUF42sBkbVTI" version="17.4.6" type="github">
   <diagram id="QpSm8B5l4Wpi0U74M7_F" name="DER + UML">
     <mxGraphModel dx="865" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -303,7 +303,7 @@
             <mxRectangle x="1907" y="180" width="90" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kVUXz5eHC7FypFmDS29q-17" value="+ establecimiento: string&#xa;+ titulo: stirng&#xa;+ fechaInicio: Date&#xa;+ logo: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="kVUXz5eHC7FypFmDS29q-16" vertex="1">
+        <mxCell id="kVUXz5eHC7FypFmDS29q-17" value="+ establecimiento: string&#xa;+ titulo: string&#xa;+ fechaInicio: Date&#xa;+ logo: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="kVUXz5eHC7FypFmDS29q-16" vertex="1">
           <mxGeometry y="26" width="160" height="84" as="geometry" />
         </mxCell>
         <mxCell id="kVUXz5eHC7FypFmDS29q-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="kVUXz5eHC7FypFmDS29q-16" vertex="1">
