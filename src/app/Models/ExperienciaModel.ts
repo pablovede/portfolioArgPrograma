@@ -1,13 +1,13 @@
 export  class ExperienciaModel {
 
-    tituloPuesto: string
+    cargo: string
     lugar: string | null
     fechaInicio: Date
     fechaFinalizacion: Date
     descripcion: string
 
-    constructor(tituloPuesto: string = "" , lugar: string = "" , fechaInicio:Date, fechaFinalizacion:Date, descripcion: string){
-        this.tituloPuesto = tituloPuesto;
+    constructor(cargo: string = "" , lugar: string = "" , fechaInicio:Date, fechaFinalizacion:Date, descripcion: string){
+        this.cargo = cargo;
         this.lugar = lugar
         this.fechaInicio = fechaInicio;
         this.fechaFinalizacion = fechaFinalizacion;

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from 'src/app/componentes/header/header.component';
@@ -16,6 +16,7 @@ import { SkillsPComponent } from './componentes/skillsP/skillsP.component';
 import { SkillsHComponent } from 'src/app/componentes/skillsH/skillsH.component';
 import { ProyectosPComponent } from './componentes/proyectos-p/proyectos-p.component';
 import { ProyectosHComponent } from './componentes/proyectos-h/proyectos-h.component';
+import { PruebaSpringComponent } from './prueba-spring/prueba-spring.component';
 
 
 @NgModule({
@@ -33,11 +34,13 @@ import { ProyectosHComponent } from './componentes/proyectos-h/proyectos-h.compo
     SkillsHComponent,
     ProyectosPComponent,
     ProyectosHComponent,
+    PruebaSpringComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
