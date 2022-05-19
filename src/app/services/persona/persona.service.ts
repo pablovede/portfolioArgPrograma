@@ -6,12 +6,12 @@ import { Persona, } from 'src/app/Models/Persona';
 @Injectable({
   providedIn: 'root'
 })
-export class PortfolioService {
+export class PersonaService {
 
-  url:string="http://localhost:8080"
+  url:string="http://localhost:8080/persona"
 
   constructor(private http:HttpClient) { }
    public getPersona():Observable<Persona> {
-		return this.http.get<Persona>(this.url+"/ver/persona")
+		return this.http.get<Persona>(this.url+"/ver/perfil")
   }
 }
