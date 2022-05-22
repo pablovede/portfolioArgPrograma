@@ -1,7 +1,11 @@
 <div class="experienciaH">
     <h5>{{experiencia.cargo}}</h5>
     <h6>{{experiencia.lugar}}</h6>
-    <p id="fecha">{{experiencia.fechaInicio | date:'shortDate'}} - {{experiencia.fechaFinalizacion | date:'shortDate'}}</p>
+    <p id="fecha">{{experiencia.desde | date:'shortDate'}} - {{experiencia.hasta | date:'shortDate'}}</p>
     <p>{{experiencia.descripcion}}</p>
+    <div class="col-12">
+        <button class="btn btn-primary flot-right">Editar</button>
+        <button class="btn btn-danger flot-right">Eliminar</button>
+        </div>
 </div>
     <hr>

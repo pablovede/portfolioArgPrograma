@@ -9,16 +9,11 @@ import { ProyectoService } from 'src/app/services/proyecto/proyecto.service';
 })
 export class ProyectosPComponent implements OnInit {
 
-  proyecto: ProyectoModel[] = []
+  proyecto:ProyectoModel = new ProyectoModel("", "", "", "");
 
-  constructor(private proyectoService:ProyectoService) { }
+  constructor(public proyectoService: ProyectoService) {}
 
   ngOnInit(): void {
-    this.getAllProyecto()
+    this.proyectoService.getProyecto().subscribe(data => {this.proyecto = data})
   }
-
-  getAllProyecto():void {
-    this.proyecto = this.proyectoService.getAllProyecto()
-  }
-
 }

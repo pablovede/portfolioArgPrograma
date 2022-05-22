@@ -1,13 +1,16 @@
 <div class="container"  >
     <div class="row" id="bordeDelimitado1">
         <H2>Proyectos</H2>
+        <span>
+        <button class="btn btn-success float-right">Agregar</button>
+    </span>
 <div class="container-fluid">
 <div class="proyectoP">
     <br>
-    <div *ngFor="let proyectos of proyecto"> 
-        <app-proyectos-h [proyecto]="proyectos"> </app-proyectos-h>
+    
+    <!--<div *ngFor="let proyectos of proyecto"> -->
+        <app-proyectos-h [proyecto]="proyecto"> </app-proyectos-h>
 </div>
 </div>
     </div>
-</div>
 </div>

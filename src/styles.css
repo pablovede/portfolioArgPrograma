@@ -1,7 +1,13 @@
 
+body {
+    background: rgb(241,11,136);
+    background: linear-gradient(90deg, rgba(241,11,136,1) 0%, rgba(255,120,148,1) 53%, rgba(255,229,143,1) 100%);
+}
+
+
 #bordeDelimitado1 {
     padding: 15px;
-    border: 2px solid #092150;
+    border: 0px solid #092150;
     border-radius: 16px;
     background: #FFFFFF;
     }
@@ -14,7 +20,7 @@
     color: grey;
 }
 
-.experienciaP, .educacionH, .proyectoP, .skillsP  {
+.experienciaP, .educacionH, .proyectoP, .skillsP, .acercaDeH  {
     margin-left: 50px;
     margin-right: 50px;
 }

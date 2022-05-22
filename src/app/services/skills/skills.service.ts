@@ -1,19 +1,24 @@
 import { Injectable } from '@angular/core';
-import { SkillsModel } from 'src/app/Models/SkillsModel';
+import { SkillModel } from 'src/app/Models/SkillModel';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { HttpHeaders } from '@angular/common/http';
 
+
+/*const httpOption = {
+  headers: new HttpHeaders({
+  'Content-Type':'application/json'
+  })
+} */
 @Injectable({
   providedIn: 'root'
 })
-export class SkillsService {
+export class SkillService {
 
-  skills: SkillsModel [] = []
+  url:string="http://localhost:8080/skill"
 
-  constructor() { }
-
-  getAllSkills(): SkillsModel [] {
-    this.skills.push (new SkillsModel ('Italiano', 30))
-    this.skills.push (new SkillsModel ('Ingles', 100))
-
-    return this.skills
+  constructor(private http:HttpClient) { }
+   public getSkill():Observable<SkillModel> {
+		return this.http.get<SkillModel>(this.url+"/ver/perfil")
   }
 }

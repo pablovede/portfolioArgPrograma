@@ -1,13 +1,13 @@
 export  class ProyectoModel {
 
-    nombreProyecto: string
-    fechaRealizacion : Date
+    nombre: string
     descripcion: string
+    fecha : string
     link: string
 
-    constructor(nombreProyecto: string = '', fechaRealizacion: Date, descripcion: string = '', link: string = '') {
-        this.nombreProyecto = nombreProyecto;
-        this.fechaRealizacion = fechaRealizacion
+    constructor(nombreProyecto: string = '', fecha: string= '', descripcion: string = '', link: string = '') {
+        this.nombre = nombreProyecto;
+        this.fecha = fecha
         this.descripcion = descripcion
         this.link = link
     }

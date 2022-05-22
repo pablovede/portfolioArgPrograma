@@ -1,16 +1,15 @@
 export  class EducacionModel {
 
-    tituloEstablecimiento: string
+    id?: number
+    establecimiento: string
     titulo: string
-    fechaInicio: Date
-    fechaFinalizacion: Date
+    fecha: string
     logo: string
 
-    constructor(tituloEstablecimiento:string = "" , titulo:string = "" , fechaInicio:Date, fechaFinalizacion:Date, logo: string){
-        this.tituloEstablecimiento = tituloEstablecimiento;
-        this.titulo = titulo
-        this.fechaInicio = fechaInicio;
-        this.fechaFinalizacion = fechaFinalizacion;
-        this.logo = logo
+    constructor(establecimiento: string = '', titulo:string = "" , fecha:string, logo: string){
+        this.titulo = titulo;
+        this.fecha = fecha;
+        this.logo = logo;
+        this.establecimiento = establecimiento;
     }
     }

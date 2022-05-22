@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsModel } from 'src/app/Models/SkillsModel';
-import { SkillsService } from 'src/app/services/skills/skills.service';
+import { SkillModel } from 'src/app/Models/SkillModel';
+import { SkillService } from 'src/app/services/skills/skills.service';
 
 @Component({
   selector: 'app-skillsP',
@@ -9,15 +9,11 @@ import { SkillsService } from 'src/app/services/skills/skills.service';
 })
 export class SkillsPComponent implements OnInit {
 
-  skills: SkillsModel[] = []
+  skill:SkillModel = new SkillModel("", );
 
-  constructor(private skillsService:SkillsService) { }
+  constructor(public skillService: SkillService) {}
 
   ngOnInit(): void {
-    this.getAllSkills()
-  }
-
-  getAllSkills():void {
-    this.skills = this.skillsService.getAllSkills()
+    this.skillService.getSkill().subscribe(data => {this.skill = data})
   }
 }

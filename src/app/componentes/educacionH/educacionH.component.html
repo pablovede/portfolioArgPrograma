@@ -1,12 +1,16 @@
 <div class="educacionH">
-    <div class="row">
-        <div class="col-1">
+    <div class="row" *ngFor= "let educacion of educaciones">
+        <div class="col-1" >
             <p> <img  src="{{educacion.logo}}"  alt="description" class="img-fluid" /></p>
         </div>
         <div class="col-11">
-            <h5>{{educacion.tituloEstablecimiento}}</h5>
+            <h5>{{educacion.establecimiento}}</h5>
             <h6>{{educacion.titulo}}</h6>
-            <p id="fecha">{{educacion.fechaInicio | date:'shortDate'}} - {{educacion.fechaFinalizacion | date:'shortDate'}}</p>
+            <p id="fecha">{{educacion.fecha | date:'shortDate'}} - <!--{{educacion.fechaFinalizacion | date:'shortDate'}} --></p>
+        </div>
+        <div class="col-12">
+        <button class="btn btn-primary flot-right">Editar</button>
+        <button class="btn btn-danger flot-right">Eliminar</button>
         </div>
         
     </div>

@@ -12,8 +12,8 @@ export class ExperienciaService {
 
 
 getAllExperiencia(): ExperienciaModel[] {
-  this.experiencia.push ( new ExperienciaModel ("Productor Ejecutivo", "Fidias Producciones", new Date (2017, 0o2), new Date (2020, 0o2),'Realizacion de videoclips, cortometrajes, institucionales' ))
-  this.experiencia.push ( new ExperienciaModel ("Diseñador Freelancer", "", new Date (2017, 0o2), new Date (2020, 0o2),'Realizacion de motion graphics para emprendimientos' ))
+  this.experiencia.push ( new ExperienciaModel ("Productor Ejecutivo", "Fidias Producciones", "fecha1", "fecha2",'Realizacion de videoclips, cortometrajes, institucionales' ))
+  this.experiencia.push ( new ExperienciaModel ("Diseñador Freelancer", "", "fecha2", "fecha3",'Realizacion de motion graphics para emprendimientos' ))
 
 return this.experiencia
 }

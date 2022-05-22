@@ -7,19 +7,9 @@ import { EducacionModel } from 'src/app/Models/EducacionModel';
   templateUrl: './educacionP.component.html',
   styleUrls: ['./educacionP.component.css']
 })
-export class EducacionPComponent implements OnInit {
+export class EducacionPComponent {
 
-  educacion: EducacionModel[] = []
+  constructor() {}
 
-  constructor(private educacionService:EducacionService) { }
-
-  ngOnInit(): void {
-    this.getAllEducacion()
-    
-}
-
-getAllEducacion():void {
-  this.educacion = this.educacionService.getAllEducacion()
-}
 
 }

@@ -8,6 +8,8 @@ import { Persona, } from 'src/app/Models/Persona';
 })
 export class PersonaService {
 
+  persona: Persona [] = []
+
   url:string="http://localhost:8080/persona"
 
   constructor(private http:HttpClient) { }

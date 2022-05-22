@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SkillsModel } from 'src/app/Models/SkillsModel';
+import { SkillModel } from 'src/app/Models/SkillModel';
 @Component({
   selector: 'app-skillsH',
   templateUrl: './skillsH.component.html',
@@ -7,7 +7,7 @@ import { SkillsModel } from 'src/app/Models/SkillsModel';
 })
 export class SkillsHComponent implements OnInit {
 
-  @Input() skills:SkillsModel;
+  @Input() skills:SkillModel;
 
   constructor() { }
 
