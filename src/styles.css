@@ -4,12 +4,19 @@ body {
     background: linear-gradient(90deg, rgba(241,11,136,1) 0%, rgba(255,120,148,1) 53%, rgba(255,229,143,1) 100%);
 }
 
+.row{
+    /* padding:20px; */
+    margin:20px
+}
 
 #bordeDelimitado1 {
     padding: 15px;
     border: 0px solid #092150;
     border-radius: 16px;
     background: #FFFFFF;
+    /* display: flex;
+    flex-direction: column;
+    gap: 1rem; */
     }
 
 .tituloCustom1 {
@@ -20,7 +27,7 @@ body {
     color: grey;
 }
 
-.experienciaP, .educacionH, .proyectoP, .skillsP, .acercaDeH  {
+.experiencia, .educacion, .proyecto, .skill, .acerca-de  {
     margin-left: 50px;
     margin-right: 50px;
 }

@@ -1,5 +1,6 @@
 #banner-arg-programa {
-    padding: 10px;
+    padding: 1rem ;
+    margin: top 2rem bottom 2rem;
     border: 2x;
     border-radius: 16px;
     background: rgba(49,187,236,255);

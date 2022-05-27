@@ -12,8 +12,24 @@ export class PersonaService {
 
   url:string="http://localhost:8080/persona"
 
-  constructor(private http:HttpClient) { }
-   public getPersona():Observable<Persona> {
-		return this.http.get<Persona>(this.url+"/ver/perfil")
+  constructor(private http:HttpClient) {}
+
+   public getPersonas():Observable<Persona[]> {
+		return this.http.get<Persona[]>(`${this.url}/ver`)
   }
+
+  public registrarPersona(persona:Persona):Observable<Persona> {
+    return this.http.post<Persona>(`${this.url}/new`, persona);
+  }
+
+  public editarPersona(persona:Persona):Observable<Persona> {
+    return this.http.put<Persona>(`${this.url}/editar`, persona)
+  }
+  public obtenerPersonaPorId(id:number):Observable<Persona>{
+    return this.http.get<Persona>(`${this.url}/${id}`);
+  }
+
+public eliminarPersona(id:number) :Observable<void> {
+  return this.http.delete<void>(`${this.url}/borrar/${id}`)
+ }
 }

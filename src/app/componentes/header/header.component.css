@@ -1,0 +1,11 @@
+#header {
+    padding: 1rem;
+    margin:  top 3rem bottom 15rem;
+    border: 2x;
+    border-radius: 16px;
+    background: rgb(400, 400, 400);
+}
+
+#redes {
+    margin: 1rem;
+}

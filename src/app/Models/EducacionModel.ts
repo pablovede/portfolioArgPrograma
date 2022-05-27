@@ -1,15 +1,22 @@
 export  class EducacionModel {
 
-    id?: number
+    id: number
     establecimiento: string
     titulo: string
-    fecha: string
+    desde: Date
+    hasta: string
     logo: string
 
-    constructor(establecimiento: string = '', titulo:string = "" , fecha:string, logo: string){
-        this.titulo = titulo;
-        this.fecha = fecha;
-        this.logo = logo;
-        this.establecimiento = establecimiento;
-    }
-    }
+
+     constructor () {}
+
+    //  constructor(establecimiento: string = '', titulo:string = "" , fecha:string, logo: string){
+    //      this.titulo = titulo;
+    //     this.fecha = fecha;
+    //      this.logo = logo;
+    //      this.establecimiento = establecimiento;
+    // }
+
+    
+
+}

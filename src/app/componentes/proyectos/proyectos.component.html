@@ -1,0 +1,120 @@
+<div class="container" id="main-container" >
+    <div class="row" id="bordeDelimitado1">
+        <H2>Proyectos</H2>
+        <span>
+            <button class="btn btn-success float-right" (click)="onOpenModal(null, 'agregar')">Agregar</button>
+        </span>
+
+<div class='proyecto' *ngFor= "let proyecto of proyectos">
+   <div class="row"></div>
+    <h5>{{proyecto?.nombre}}</h5>
+    <h6>{{proyecto?.descripcion}}</h6>
+    <p id="fecha">{{proyecto?.fecha | date:'shortDate'}} <!--- {{experiencia.hasta | date:'shortDate'}}</p> -->
+    <p>{{proyecto?.link}}</p>
+    <div class="col-12">
+        <button class="btn btn-primary float-right" (click)="onOpenModal(proyecto, 'editar')">Editar</button>
+        <button class="btn btn-danger float-right" (click)="onOpenModal(proyecto, 'eliminar')">Eliminar</button>
+        </div>
+</div>
+ 
+
+   </div>
+</div>
+
+<!-- Modal de AGREGAR -->
+<div class="modal fade" id="agregarProyectoModal" tabindex="-1" role="dialog" aria-labelledby="addAgregarProyecto" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="AgregarProyectoLabel">Agregar Proyecto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <form #addForm="ngForm" (ngSubmit)="onAgregarProyecto(addForm)">
+            <div class="form-group">
+               <label for="nombre"> Nombre</label>
+               <input type="text" ngModel name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+               <label for="descripcion">Descripcion</label>
+               <input type="text" ngModel name="descripcion" class="form-control" id="descripcion" placeholder="Descripcion" required>
+            </div>
+            <div class="form-group">
+               <label for="fecha">Fecha</label>
+               <input type="date" ngModel name="fecha" class="form-control" id="fecha" placeholder="Fecha" required>
+            </div>
+            <div class="form-group">
+               <label for="link">Link</label>
+               <input type="text" ngModel name="link" class="form-control" id="link" placeholder="Link" required>
+            </div>
+            <div class="modal-footer">
+               <button type="button" id="agregar-proyecto-form" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+               <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary" >Guardar</button>
+            </div>
+            </form>
+         </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Modal de EDITAR -->
+<div class="modal fade" id="editarProyectoModal" tabindex="-1" role="dialog" aria-labelledby="proyectoEditarModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title" id="editarProyectoModalLabel">Editar Proyecto</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+             </button>
+          </div>
+          <div class="modal-body">
+             <form #editForm="ngForm">
+                <div class="form-group">
+                   <label for="nombre"> Nombre </label>
+                   <input type="text" ngModel="{{editarProyecto?.nombre}}" name="nombre" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre">
+                </div>
+                <input type="hidden" ngModel="{{editarProyecto?.id}}" name="id" class="form-control" id="id" placeholder="cualquiera">
+                <div class="form-group">
+                   <label for="descripcion"> Descripcion </label>
+                   <input type="text" ngModel="{{editarProyecto?.descripcion}}" name="descripcion" class="form-control" id="descripcion" placeholder="Descripcion">
+                </div>
+                <div class="form-group">
+                   <label for="fecha">Fecha</label>
+                   <input type="date" ngModel="{{editarProyecto?.fecha}}" name="fecha" class="form-control" id="fecha" placeholder="Fecha">
+                </div>
+                <div class="form-group">
+                   <label for="link">Link</label>
+                   <input type="text" ngModel="{{editarProyecto?.link}}" name="link" class="form-control" id="link" placeholder="Link del proyecto">
+                </div>
+                <div class="modal-footer">
+                   <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Cerrar</button>
+                   <button (click)="onEditarProyecto(editForm.value)" data-dismiss="modal" class="btn btn-primary" >Guardar cambios</button>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+  </div>
+
+  <!-- Modal de ELIMINAR  -->
+<div class="modal fade" id="eliminarProyectoModal" tabindex="-1" role="dialog" aria-labelledby="eliminarModelLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title" id="deleteModelLabel">Eliminar Proyecto</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+             </button>
+          </div>
+          <div class="modal-body">
+             <p>Estas seguro que queres eliminar este proyecto?</p>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button (click)="onEliminarProyecto(eliminarProyecto?.id)" class="btn btn-danger" data-dismiss="modal">Si</button>
+             </div>
+          </div>
+       </div>
+    </div>
+  </div>

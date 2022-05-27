@@ -1,0 +1,80 @@
+<div class="container" id="main-container" *ngFor= "let persona of personas">
+    <div class="row" id="bordeDelimitado1">
+      <div class="col-md-4">
+         <img src={{persona?.img}} class="img-fluid" id="fotodeperfil">
+     </div>
+        <div class="acerca-de">
+    <h1>{{persona?.nombre}} {{persona?.apellido}}</h1>
+    <h4>{{persona?.cargo}}</h4>
+    <p>{{persona?.descripcion}}</p>
+
+<div class="col-12">
+    <button class="btn btn-primary" (click)="onOpenModal(persona, 'editar')">Editar</button>
+</div>
+    </div>
+</div>
+</div>
+
+<!-- Modal de EDITAR -->
+<div class="modal fade" id="editarPersonaModal" tabindex="-1" role="dialog" aria-labelledby="personaEditarModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title" id="editarPersonaModalLabel">Editar Acerca De</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+             </button>
+          </div>
+          <div class="modal-body">
+             <form #editForm="ngForm">
+                <div class="form-group">
+                   <label for="nombre"> Nombre </label>
+                   <input type="text" ngModel="{{editarPersona?.nombre}}" name="nombre" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Nombre">
+                </div>
+                <input type="hidden" ngModel="{{editarPersona?.id}}" name="id" class="form-control" id="id" placeholder="cualquiera">
+                <div class="form-group">
+                   <label for="apellido"> Apellido </label>
+                   <input type="text" ngModel="{{editarPersona?.apellido}}" name="apellido" class="form-control" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="form-group">
+                   <label for="img">Foto de perfil</label>
+                   <input type="text" ngModel="{{editarPersona?.img}}" name="img" class="form-control" id="img" placeholder="URL">
+                </div>
+                <div class="form-group">
+                   <label for="cargo">Profesion</label>
+                   <input type="text" ngModel="{{editarPersona?.cargo}}" name="cargo" class="form-control" id="cargo" placeholder="Profesion">
+                </div>
+                <div class="form-group">
+                   <label for="descripcion">Descripcion</label>
+                   <input type="text" ngModel="{{editarPersona?.descripcion}}" name="descripcion" class="form-control" id="descripcion" placeholder="Descripcion">
+                </div>
+                <div class="modal-footer">
+                   <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Cerrar</button>
+                   <button (click)="onEditarPersona(editForm.value)" data-dismiss="modal" class="btn btn-primary" >Guardar cambios</button>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+  </div>
+
+   <!-- Modal de ELIMINAR
+<div class="modal fade" id="eliminarPersonaModal" tabindex="-1" role="dialog" aria-labelledby="eliminarModelLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title" id="deleteModelLabel">Eliminar Persona</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+             </button>
+          </div>
+          <div class="modal-body">
+             <p>Estas seguro que queres eliminar esta persona?</p>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button (click)="onEliminarPersona(eliminarPersona?.id)" class="btn btn-danger" data-dismiss="modal">Si</button>
+             </div>
+          </div>
+       </div>
+    </div>
+  </div> -->

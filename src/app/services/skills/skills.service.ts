@@ -3,22 +3,35 @@ import { SkillModel } from 'src/app/Models/SkillModel';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 
-/*const httpOption = {
-  headers: new HttpHeaders({
-  'Content-Type':'application/json'
-  })
-} */
 @Injectable({
   providedIn: 'root'
 })
 export class SkillService {
 
-  url:string="http://localhost:8080/skill"
-
+  private apiServerUrl= environment.apiBaseUrl + '/skill';
   constructor(private http:HttpClient) { }
-   public getSkill():Observable<SkillModel> {
-		return this.http.get<SkillModel>(this.url+"/ver/perfil")
+
+
+  public getSkills():Observable<SkillModel[]> {
+		return this.http.get<SkillModel[]>(`${this.apiServerUrl}/ver`)
   }
+
+  public registrarSkill(skill:SkillModel):Observable<SkillModel> {
+    return this.http.post<SkillModel>(`${this.apiServerUrl}/new`, skill);
+  }
+
+  public editarSkill(skill:SkillModel):Observable<SkillModel> {
+    return this.http.put<SkillModel>(`${this.apiServerUrl}/editar`, skill);
+  }
+  
+  public obtenerSkillPorId(id:number):Observable<SkillModel>{
+    return this.http.get<SkillModel>(`${this.apiServerUrl}/${id}`);
+  }
+
+public eliminarSkill(id:number) :Observable<void> {
+  return this.http.delete<void>(`${this.apiServerUrl}/borrar/${id}`)
+ }
 }
