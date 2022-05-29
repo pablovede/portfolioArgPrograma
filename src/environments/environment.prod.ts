@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiBaseUrl: 'https://stormy-citadel-14002.herokuapp.com'
 };
