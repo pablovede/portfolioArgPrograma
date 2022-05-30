@@ -1,7 +1,8 @@
 <div class="container" id="main-container" *ngFor= "let persona of personas">
     <div class="row" id="bordeDelimitado1">
       <div class="col-md-4">
-         <img src={{persona?.img}} class="img-fluid" id="fotodeperfil">
+         <img src= {{persona?.img}} class="img-fluid" id="fotodeperfil">
+         <!-- <img src= "https://comunicacioninstitucional.unvm.edu.ar/wp-content/uploads/2019/12/Isotipo-unvm.jpg" class="img-fluid" id="fotodeperfil"> -->
      </div>
         <div class="acerca-de">
     <h1>{{persona?.nombre}} {{persona?.apellido}}</h1>

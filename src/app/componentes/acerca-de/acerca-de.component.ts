@@ -60,32 +60,32 @@ export class AcercaDeComponent implements OnInit {
 
 
 
-   public onAgregarPersona(addForm:NgForm): void {
-     document.getElementById('agregar-persona-form').click();
-     this.personaService.registrarPersona(addForm.value).subscribe(
-     (data: Persona) => {
-       console.log(data);
-      this.obtenerPersonas();
-       addForm.reset();
-     },
-     (error: HttpErrorResponse) => {
-    alert(error.message);
-       addForm.reset();
-     },
-     )
-   }
+  //  public onAgregarPersona(addForm:NgForm): void {
+  //    document.getElementById('agregar-persona-form').click();
+  //    this.personaService.registrarPersona(addForm.value).subscribe(
+  //    (data: Persona) => {
+  //      console.log(data);
+  //     this.obtenerPersonas();
+  //      addForm.reset();
+  //    },
+  //    (error: HttpErrorResponse) => {
+  //   alert(error.message);
+  //      addForm.reset();
+  //    },
+  //    )
+  //  }
   
 
   
-  public onEliminarPersona(id:number): void {
-     this.personaService.eliminarPersona(id).subscribe(
-    (data: void) => {
-       this.obtenerPersonas();
-   },
-    (error: HttpErrorResponse) => {
-      alert(error.message);
-     },
-     )
+//   public onEliminarPersona(id:number): void {
+//      this.personaService.eliminarPersona(id).subscribe(
+//     (data: void) => {
+//        this.obtenerPersonas();
+//    },
+//     (error: HttpErrorResponse) => {
+//       alert(error.message);
+//      },
+//      )
+//  }
+
  }
-
-}
